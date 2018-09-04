@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/jasonmren/}{\Large Jason Matthew Ren}} & \href{mailto:jasonren@wustl.edu}{jasonren@wustl.edu}\\
+  \href{https://www.linkedin.com/in/jasonmren/}{https://www.linkedin.com/in/jasonmren/} & +1-610-203-2179 \\
+  \href{https://github.com/jasonren5}{https://github.com/jasonren5}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Washington University in St. Louis}{St. Louis, MO}
+      {Rising Sophomore Computer Science Student;  GPA: 3.22)}{Aug. 2017 -- May 2021 (expected)}
+      \resumeItemListStart
+      	\resumeItem{Relevant First Semester Coursework}{}
+      		\begin{itemize}
+      			\item CSE132 (Computer Science II)
+      			\item CSE240 (Logic and Discrete Math)
+      		\end{itemize}
+      	\resumeItem{Relevant Second Semester Coursework}{}
+      		\begin{itemize}
+      			\item CSE104 (Web Development)
+      			\item CSE247 (Data Structures and Algorithms)
+      			\item CSE260M (Introduction to Digital Logic and Computer Design)
+      		\end{itemize}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Great Valley High School}{Malvern, PA}
+      {SAT: 2360 (800CR/800M/760W);  GPA: 4.0}{Aug. 2013 - June 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  	\resumeSubheading {Lavner Camps and Programs}{Narberth, PA}{Technology Instructor and IT Technician}
+  	{May 2018 - Aug. 2018 (expected)}
+  	\resumeItemListStart
+  		\resumeItem{Technology Instructor}{Taught kids aged 7 to 12 the basics of programming with Python and Java. Was responsible for leading classroom instruction, as well as camper safety.}
+  		\resumeItem{IT Technician}{Worked at central office, installing various pieces of software on hundreds of computers to be distributed to multiple camp locations, for which I wrote scripts to automate the process. Also verified and managed inventory for various items such as drones.}
+  	\resumeItemListEnd
+  		
+
+    \resumeSubheading
+      {PrimBio Research Institute LLC.}{Exton, PA}
+      {Software Intern}{June 2016 - Aug. 2016}
+      \resumeItemListStart
+        \resumeItem{Scripting Work}
+          {Added to and edited a script written in Python that converted data from .fastq filetype to .fasta, and subsequently compressed said data using 7zip.}
+        \resumeItem{Microsoft Excel}
+          {Analyzed and formatted raw cell count numbers of various bacteria within samples into corresponding taxonomic ranks for customer presentation.}
+      	\resumeItem{Website Develoment}
+      	  {Refined and simplified navigation of the website, and also updated company information and services.}
+   	  	\resumeItem{PCR Work}
+   	   	  {Analyzed customer DNA samples via Polymerase Chain Reaction experiments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+%------------Work-------------
+\section{Volunteer Work}
+	\resumeSubHeadingListStart
+	
+		\resumeSubheading{Paoli Hospital}{Paoli, PA}{Patient Transport}{Summer 2015 and Summer 2016}
+			\resumeItemListStart
+				\resumeItem{Duties}
+					{Transported patients to and from patient rooms and various departments of the hospital, including surgery and ER either independently or in pairs, as well as discharging patients from the hospital. Sanitized hospital equipment during downtime.}
+			\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd  
+
+\section{Additional Information}
+
+	\resumeSubHeadingListStart
+		\resumeSubItem{National Merit Finalist}
+		{1500/1520 on October 2015 PSAT.}
+		\resumeSubItem{Member of Alpha Delta Phi}
+		{Current PR Manager for Alpha Delta Phi's Washington University Chapter.}
+		\resumeSubItem{Member of The Burning Kumquat}
+		{Washington University club dedicated to maintaining an organic produce garden on campus, as well as educating others about sustainable urban farming practices.}
+		\resumeSubItem{Violinist}
+		{Practiced violin for 9 years; previously concert master of high school symphonic orchestra, and alum of PMEA region 6 2017 orchestra and the Philadelphia Sinfonia.}
+		\resumeSubItem{Interests and Hobbies}
+		{NFL Football, music, novel technologies and gadgets, mechanical keyboards, video game development, investing, writing, photography, and video editing.}
+	\resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Notable Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python (2.x and 3.x), C\#, Java, C, HTML, JS, CSS, LaTeX}
+      \hfill
+      \\
+      \textbf{Technologies}{: Arduino, Unity, Slack, Git, Google App Suite, Microsoft Office}
+    }
+
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
