@@ -27,14 +27,24 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Custom commands
+\newcommand{\resumeItemSmall}[2]{
+	\item[]
+	\small{
+		\textbf{#1}{: #2 \vspace{-2pt}}
+	}
+}
+
 \newcommand{\resumeItem}[2]{
-  \item\small{
+  \item
+  \small{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
 
+
+
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-1pt}\item[]
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -42,6 +52,7 @@
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItemSmall}[2]{\resumeItemSmall{#1}{#2}\vspace{-4pt}}
 \renewcommand{\labelitemii}{$\circ$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -95,7 +106,7 @@
   	{Aug 2018 - Present}
   	\resumeItemListStart
   		\resumeItem{Scripting}{Wrote scripts to clean, standardize, and merge violent injury visitation data from local St. Louis emergency rooms, and created a patient identification system utilizing hash codes.}
-  		\resumeItem{Database work}{Wrote scripts to clean and beautify data on St. Louis County Police violent crime incidents.}
+  		\resumeItem{Data Cleaning}{Wrote scripts to clean and beautify data on St. Louis County Police violent crime incidents.}
   	\resumeItemListEnd
   
   	\resumeSubheading {Lavner Camps and Programs}{Narberth, PA}{Technology Instructor and IT Technician}
@@ -122,42 +133,30 @@
 \section{Personal Projects}
 
 	\resumeSubHeadingListStart
-		\resumeSubItem{rpg-clicker-game}{An incremental RPG game written in HTML (using Bootstrap), and JavaScript and JQuery.}
-		\resumeSubItem{personal-website}{A personal website written in HTML (using Bootstrap) and CSS.}
-		\resumeSubItem{caesar-cipher}{A short Python program written to educate young teens on programming principles and basic encryption.}
-		\resumeSubItem{resume}{This resume, which is typeset in LaTeX!}
-
-		
+		\resumeSubItemSmall{rpg-clicker-game}{An incremental RPG game written in HTML (using Bootstrap), and JavaScript and JQuery.}
+		\resumeSubItemSmall{personal-website}{A personal website written in HTML (using Bootstrap) and CSS.}
+		\resumeSubItemSmall{caesar-cipher}{A short Python program written to educate young teens on programming principles and basic encryption.}
+		\resumeSubItemSmall{resume}{This resume, which is typeset in LaTeX!}		
 	\resumeSubHeadingListEnd
-%------------Work-------------
-%\section{Volunteer Work}
-%	\resumeSubHeadingListStart
-%		\resumeSubheading{Paoli Hospital}{Paoli, PA}{Patient Transport}{Summer 2015 and Summer 2016}
-%			\resumeItemListStart
-%				\resumeItem{Duties}
-%					{Transported patients to and from patient rooms and various departments of the hospital, including surgery and ER either independently or in pairs, as well as discharging patients from the hospital. Sanitized hospital equipment during downtime.}
-%			\resumeItemListEnd
-%	
-%	\resumeSubHeadingListEnd  
-
+	
+%-----Additional Information----------
 \section{Additional Information}
 
 	\resumeSubHeadingListStart
-		\resumeSubItem{Member of Alpha Delta Phi}
-		{Current PR Manager for Alpha Delta Phi's Washington University Chapter.}
-		\resumeSubItem{Member of Campus Y}{Volunteer at local St. Louis animal shelter.}
-		\resumeSubItem{National Merit Finalist}
+		\resumeSubItemSmall{Member of Alpha Delta Phi}
+		{PR Manager for Alpha Delta Phi's Washington University Chapter.}
+		\resumeSubItemSmall{Member of Campus Y}{Volunteer at local St. Louis animal shelter.}
+		\resumeSubItemSmall{National Merit Finalist}
 		{1500/1520 on October 2015 PSAT.}
-		\resumeSubItem{Interests and Hobbies}
+		\resumeSubItemSmall{Interests and Hobbies}
 		{Philadelphia Eagles, data science, web-application development, violin performance, underground music, mechanical keyboards, video game development,  writing, photography.}
-
 	\resumeSubHeadingListEnd
 	
 %--------PROGRAMMING SKILLS------------
 \section{Skills}
  \resumeSubHeadingListStart
-    \item{
-      \textbf{Languages}{: PHP, MySQL, Python 3, C\#, Java, C, HTML, JavaScript, CSS, LaTeX}
+    \item[]{
+      \textbf{Languages}{: Python 3, Java, PHP, MySQL, C\#, C, HTML, JavaScript, CSS, LaTeX}
       \hfill
       \\
       \textbf{Technologies}{: Apache, Amazon EC2, Linux, Unity, Slack, Git, Google App Suite, Microsoft Office}
